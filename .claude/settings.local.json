@@ -12,7 +12,11 @@
       "Read(/C:\\Users\\lucas\\Desktop\\Projects\\trypeek\\src\\app\\pricing/**)",
       "Bash(git add:*)",
       "Bash(git push:*)",
-      "Read(/C:\\Users\\lucas\\Desktop\\Projects\\trypeek\\src\\components/**)"
+      "Read(/C:\\Users\\lucas\\Desktop\\Projects\\trypeek\\src\\components/**)",
+      "Bash(npm run build:*)",
+      "Bash(npx next:*)",
+      "Read(/C:\\Users\\lucas\\Desktop\\Projects\\trypeek\\src\\lib/**)",
+      "Bash(npx tsc:*)"
     ],
     "deny": [],
     "ask": []

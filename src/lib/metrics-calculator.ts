@@ -1,5 +1,5 @@
 interface AppStoreData {
-  appId: string;
+  id: string;
   name: string;
   category: string;
   ranking: number;
