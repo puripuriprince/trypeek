@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/C:\\Users\\lucas\\Desktop\\Projects\\trypeek/**)",
+      "Bash(npm install:*)",
+      "Bash(npm cache clean:*)",
+      "Read(/C:\\Users\\lucas\\Desktop\\Projects\\trypeek\\src\\app/**)",
+      "Bash(npm run dev:*)",
+      "Read(/C:\\Users\\lucas\\Desktop\\Projects\\trypeek\\node_modules/**)",
+      "Read(/C:\\Users\\lucas\\Desktop\\Projects\\trypeek/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
