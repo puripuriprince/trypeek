@@ -124,7 +124,7 @@ export class MetricsCalculator {
   /**
    * Calculates growth metrics and trends
    */
-  calculateGrowthMetrics(appData: AppStoreData, historicalData?: any[]): GrowthMetrics {
+  calculateGrowthMetrics(appData: AppStoreData, historicalData?: unknown[]): GrowthMetrics {
     // Simulate growth calculations - in real app would use historical data
     const ageWeight = Math.min(appData.ageInDays / 365, 3); // Max 3 years weight
     const reviewVelocity = appData.reviews / Math.max(appData.ageInDays, 1);
@@ -241,7 +241,7 @@ export class MetricsCalculator {
   }
 
   private calculateRevenueBreakdown(appData: AppStoreData, totalRevenue: number) {
-    let breakdown = { ads: 0, inAppPurchases: 0, subscriptions: 0, paidDownloads: 0 };
+    const breakdown = { ads: 0, inAppPurchases: 0, subscriptions: 0, paidDownloads: 0 };
 
     if (appData.price > 0) {
       breakdown.paidDownloads = totalRevenue;
@@ -291,7 +291,7 @@ export class MetricsCalculator {
     return `Downloads estimated using review-to-download ratio analysis, ranking position (#${appData.ranking}), app age (${appData.ageInDays} days), and category-specific conversion rates.`;
   }
 
-  private simulateGrowthRate(appData: AppStoreData, metric: 'downloads' | 'revenue'): number {
+  private simulateGrowthRate(appData: AppStoreData, _metric: 'downloads' | 'revenue'): number {
     // Simulate growth based on app characteristics
     const baseGrowth = Math.random() * 20 - 10; // ±10%
     const rankingBonus = appData.ranking <= 100 ? 15 : 0;

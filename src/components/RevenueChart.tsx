@@ -28,7 +28,7 @@ const generateMockData = (days: number) => {
   return data;
 };
 
-export function RevenueChart({ appId }: RevenueChartProps) {
+export function RevenueChart({ appId: _appId }: RevenueChartProps) {
   const [timeRange, setTimeRange] = useState<'7d' | '30d' | '90d'>('30d');
   
   const getDays = (range: string) => {

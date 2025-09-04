@@ -28,7 +28,7 @@ const generateMockData = (days: number) => {
   return data;
 };
 
-export function DownloadChart({ appId }: DownloadChartProps) {
+export function DownloadChart({ appId: _appId }: DownloadChartProps) {
   const [timeRange, setTimeRange] = useState<'7d' | '30d' | '90d'>('30d');
   
   const getDays = (range: string) => {

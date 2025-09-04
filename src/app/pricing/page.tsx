@@ -159,7 +159,7 @@ export default function PricingPage() {
               </h4>
               <p className="text-slate-600 dark:text-slate-300">
                 Absolutely! You can upgrade or downgrade your plan at any time. 
-                Changes take effect immediately, and we'll prorate any differences.
+                Changes take effect immediately, and we&apos;ll prorate any differences.
               </p>
             </div>
           </div>
