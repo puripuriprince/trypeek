@@ -6,10 +6,8 @@ interface AppHeaderProps {
     icon: string;
     description: string;
     rating: number;
-    reviewCount: string;
-    estimatedRevenue: string;
-    estimatedDownloads: string;
-    price: string;
+    reviewCount: number;
+    price: number;
     ageRating: string;
     size: string;
     lastUpdated: string;
@@ -41,7 +39,7 @@ export function AppHeader({ app }: AppHeaderProps) {
               <div className="flex items-center space-x-4 text-sm text-slate-500 dark:text-slate-400">
                 <span>{app.category}</span>
                 <span>•</span>
-                <span>{app.price}</span>
+                <span>{app.price > 0 ? `$${app.price.toFixed(2)}` : 'Free'}</span>
                 <span>•</span>
                 <span>{app.ageRating}</span>
               </div>
@@ -65,7 +63,9 @@ export function AppHeader({ app }: AppHeaderProps) {
                   {app.rating}
                 </span>
                 <span className="text-sm text-slate-500 dark:text-slate-400">
-                  ({app.reviewCount})
+                  ({app.reviewCount >= 1000000 ? `${(app.reviewCount / 1000000).toFixed(1)}M` : 
+                    app.reviewCount >= 1000 ? `${(app.reviewCount / 1000).toFixed(1)}K` : 
+                    app.reviewCount.toString()})
                 </span>
               </div>
               

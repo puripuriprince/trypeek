@@ -10,7 +10,9 @@
       "Read(/C:\\Users\\lucas\\Desktop\\Projects\\trypeek/**)",
       "Bash(git commit:*)",
       "Read(/C:\\Users\\lucas\\Desktop\\Projects\\trypeek\\src\\app\\pricing/**)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Read(/C:\\Users\\lucas\\Desktop\\Projects\\trypeek\\src\\components/**)"
     ],
     "deny": [],
     "ask": []
